@@ -1,0 +1,40 @@
+{
+  "name": "salesforce_marketing_cloud_journey_builder_sms",
+  "version": "1.0.0",
+  "description": "Journey Builder Activity Template",
+  "scripts": {
+    "prestart": "npm run build",
+    "build": "babel src -D --out-dir dist",
+    "start": "node dist/app",
+    "local": "nodemon --exec ./node_modules/.bin/babel-node src/app"
+  },
+  "author": "360 Degree Cloud Developers",
+  "dependencies": {
+    "@babel/cli": "^7.12.16",
+    "@babel/core": "^7.12.16",
+    "@babel/node": "^7.12.16",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/runtime": "^7.6.3",
+    "axios": "^0.21.1",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.5",
+    "crypto": "^1.0.1",
+    "debug": "^4.3.2",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fuel-rest": "^3.2.2",
+    "helmet": "^4.6.0",
+    "http-errors": "^1.8.0",
+    "jsonwebtoken": "^8.0.1",
+    "mongoose": "^6.0.5",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.0",
+    "nodemon": "^2.0.12",
+    "path": "^0.12.7",
+    "twilio": "^3.36.0",
+    "uuid": "^8.3.2"
+  }
+}
